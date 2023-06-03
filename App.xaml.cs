@@ -1,4 +1,6 @@
-﻿namespace mobile_systems_project;
+﻿using mobile_systems_project.View;
+
+namespace mobile_systems_project;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new FirstPage());
 	}
 }
