@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace mobile_systems_project.Repository
 {
     
-    public class NumbersRepository
+    public class NumberRepository
     {
         private const string FileName = "numbers.txt";
         private static readonly string FilePath = Path.Combine(FileSystem.Current.AppDataDirectory, FileName);
