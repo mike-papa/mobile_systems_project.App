@@ -15,6 +15,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+		//Seed data
+		Seeder.Seeder.SeedData();
+
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
