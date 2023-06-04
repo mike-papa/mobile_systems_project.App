@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile_systems_project.View.LearnBinarySystemPage"
+             Title="Learn Binary System Page">
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Grid.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                
+            </Grid.GestureRecognizers>
+            <Label 
+                x:Name="numberLabel"
+                Grid.Row="0"
+                Text=""
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                FontSize="30"
+                FontAttributes="Bold"/>
+
+            <Label 
+            x:Name="textLabel"
+            Text=""
+                FontSize="30"
+                FontAttributes="Bold"
+            Grid.Row="1"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            IsVisible="False" >
+                
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <StackLayout 
+                Grid.Row="2"
+                VerticalOptions="FillAndExpand">
+                <Button 
+                    Text="Change Display Mode"
+                    Clicked="Button_Clicked"
+                    HorizontalOptions="Center" />
+                
+                    
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
