@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile_systems_project.View.ChallengeBinarySystem.ChallengeBinarySystemPage"
+             Title="ChallengeBinarySystemPage">
+    <Grid>
+        <Grid.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+            <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Grid.GestureRecognizers>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Formatted Number List -->
+        <Label x:Name="FormattedNumberListLabel" Grid.Row="0" Grid.ColumnSpan="2" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <!-- Label -->
+        <Label Text="How many digits?" Grid.Row="1" Grid.Column="0" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" />
+
+
+        <!-- Input -->
+        <Entry Placeholder="Enter number of digits" Grid.Row="1" Grid.Column="1" FontSize="30" FontAttributes="Bold" TextChanged="Entry_TextChanged"/>
+    </Grid>
+
+
+</ContentPage>
