@@ -2,21 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobile_systems_project.View.FirstPage"
+             BackgroundColor="#CB6CE6"
              Title="Binary System">
+    
+    
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
             <RowDefinition Height="3*" />
+
         </Grid.RowDefinitions>
-    <Label 
+        <Image 
             Grid.Row="0"
-            FontSize="30"
-            FontAttributes="Bold"
-            Text="JAKIS IMAGE"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Source="memory_master_logo.png"
+            Aspect="Center"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
 
         <StackLayout 
+            
             Grid.Row="1"
             VerticalOptions="Center"
             HorizontalOptions="Center">
