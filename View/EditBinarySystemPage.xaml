@@ -8,9 +8,12 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding NumericValue}" />
-                            <Entry Text="{Binding TextualValue}" />
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding NumericValue}" FontSize="20"/>
+                                <Entry Text="{Binding TextualValue}" FontSize="18" />
+                            </StackLayout>
+                            
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
